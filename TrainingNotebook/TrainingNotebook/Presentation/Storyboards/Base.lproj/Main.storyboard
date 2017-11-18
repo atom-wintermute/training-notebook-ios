@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--UserListViewController-->
+        <!--ClientListViewController-->
         <scene sceneID="l1I-DD-YW1">
             <objects>
-                <viewControllerPlaceholder storyboardName="UserList" referencedIdentifier="UserListViewController" id="WCS-Qg-ldI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ClientList" referencedIdentifier="ClientListViewController" id="WCS-Qg-ldI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="cAF-qd-qpW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YU-SS-x82" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o8K-eX-O4E">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User List-->
+        <scene sceneID="gUT-Hp-k0U">
+            <objects>
+                <viewController storyboardIdentifier="ClientListViewController" title="User List" id="o8K-eX-O4E" customClass="ClientListViewController" customModule="Training_Notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H4Q-EH-wVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-Tt-FuL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="o8K-eX-O4E" id="QZH-VP-m7H"/>
+                                    <outlet property="delegate" destination="o8K-eX-O4E" id="asq-h2-7Z7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2b-UU-5f4">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0lj-tp-hw0"/>
+                                </constraints>
+                                <state key="normal" title="Add new user"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D2b-UU-5f4" firstAttribute="top" secondItem="8O6-Tt-FuL" secondAttribute="bottom" id="9Qr-ho-y9h"/>
+                            <constraint firstItem="YR6-df-GFy" firstAttribute="trailing" secondItem="D2b-UU-5f4" secondAttribute="trailing" id="O0l-Es-fNG"/>
+                            <constraint firstItem="D2b-UU-5f4" firstAttribute="top" secondItem="8O6-Tt-FuL" secondAttribute="bottom" id="VJT-Ti-cy2"/>
+                            <constraint firstItem="8O6-Tt-FuL" firstAttribute="top" secondItem="YR6-df-GFy" secondAttribute="top" id="Wxa-oU-cGj"/>
+                            <constraint firstItem="YR6-df-GFy" firstAttribute="bottom" secondItem="D2b-UU-5f4" secondAttribute="bottom" id="c8a-2Z-OVL"/>
+                            <constraint firstItem="8O6-Tt-FuL" firstAttribute="trailing" secondItem="YR6-df-GFy" secondAttribute="trailing" id="eBf-82-PrM"/>
+                            <constraint firstItem="8O6-Tt-FuL" firstAttribute="leading" secondItem="YR6-df-GFy" secondAttribute="leading" id="iC4-xa-8ZL"/>
+                            <constraint firstItem="D2b-UU-5f4" firstAttribute="leading" secondItem="YR6-df-GFy" secondAttribute="leading" id="wX1-oy-5gY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YR6-df-GFy"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="8O6-Tt-FuL" id="qsu-yn-IAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgd-1R-r8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

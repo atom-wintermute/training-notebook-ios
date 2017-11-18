@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3921B2943643C96581EA35BD /* Pods_Training_Notebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E393BA3CC6EB913926C37E /* Pods_Training_Notebook.framework */; };
-		D899BCFC1FC098B6003CA967 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BCFB1FC098B6003CA967 /* UserListViewController.swift */; };
-		D899BCFF1FC099CD003CA967 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D899BCFD1FC099CD003CA967 /* UserList.storyboard */; };
+		D899BCFC1FC098B6003CA967 /* ClientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BCFB1FC098B6003CA967 /* ClientListViewController.swift */; };
+		D899BCFF1FC099CD003CA967 /* ClientList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D899BCFD1FC099CD003CA967 /* ClientList.storyboard */; };
+		D899BD021FC09F23003CA967 /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899BD011FC09F23003CA967 /* ClientCell.xib */; };
+		D899BD041FC0A043003CA967 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BD031FC0A043003CA967 /* ClientCell.swift */; };
+		D899BD061FC0A5B9003CA967 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BD051FC0A5B9003CA967 /* Client.swift */; };
 		D8E837D31FC09064007473AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E837BD1FC09062007473AF /* Assets.xcassets */; };
 		D8E837D51FC09064007473AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E837C11FC09062007473AF /* AppDelegate.swift */; };
 		D8E837D61FC09064007473AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E837C61FC09062007473AF /* LaunchScreen.storyboard */; };
@@ -42,8 +45,11 @@
 		08885F9E133C5076EC71BE49 /* Pods-Training Notebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training Notebook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Training Notebook/Pods-Training Notebook.debug.xcconfig"; sourceTree = "<group>"; };
 		33A8D5655F82C2F2BB29218B /* Pods-Training Notebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training Notebook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Training Notebook/Pods-Training Notebook.release.xcconfig"; sourceTree = "<group>"; };
 		82E393BA3CC6EB913926C37E /* Pods_Training_Notebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Training_Notebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D899BCFB1FC098B6003CA967 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		D899BCFE1FC099CD003CA967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserList.storyboard; sourceTree = "<group>"; };
+		D899BCFB1FC098B6003CA967 /* ClientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListViewController.swift; sourceTree = "<group>"; };
+		D899BCFE1FC099CD003CA967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ClientList.storyboard; sourceTree = "<group>"; };
+		D899BD011FC09F23003CA967 /* ClientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
+		D899BD031FC0A043003CA967 /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		D899BD051FC0A5B9003CA967 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		D8A07DF71FC086A200E0E872 /* Training Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Training Notebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A07E0D1FC086A200E0E872 /* Training NotebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training NotebookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A07E181FC086A200E0E872 /* Training NotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training NotebookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +106,23 @@
 				82E393BA3CC6EB913926C37E /* Pods_Training_Notebook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D899BD001FC09F0A003CA967 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D899BD011FC09F23003CA967 /* ClientCell.xib */,
+				D899BD031FC0A043003CA967 /* ClientCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D899BD071FC0A5BC003CA967 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D899BD051FC0A5B9003CA967 /* Client.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D8A07DEE1FC086A200E0E872 = {
@@ -171,6 +194,7 @@
 		D8E837C31FC09062007473AF /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D899BD071FC0A5BC003CA967 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -190,7 +214,7 @@
 			children = (
 				D8E837C61FC09062007473AF /* LaunchScreen.storyboard */,
 				D8E837C81FC09062007473AF /* Main.storyboard */,
-				D899BCFD1FC099CD003CA967 /* UserList.storyboard */,
+				D899BCFD1FC099CD003CA967 /* ClientList.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -198,7 +222,8 @@
 		D8E837CC1FC09062007473AF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D899BCFB1FC098B6003CA967 /* UserListViewController.swift */,
+				D899BD001FC09F0A003CA967 /* Cells */,
+				D899BCFB1FC098B6003CA967 /* ClientListViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -332,9 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E837D71FC09064007473AF /* Main.storyboard in Resources */,
-				D899BCFF1FC099CD003CA967 /* UserList.storyboard in Resources */,
+				D899BCFF1FC099CD003CA967 /* ClientList.storyboard in Resources */,
 				D8E837D31FC09064007473AF /* Assets.xcassets in Resources */,
 				D8E837D61FC09064007473AF /* LaunchScreen.storyboard in Resources */,
+				D899BD021FC09F23003CA967 /* ClientCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D899BCFC1FC098B6003CA967 /* UserListViewController.swift in Sources */,
+				D899BD041FC0A043003CA967 /* ClientCell.swift in Sources */,
+				D899BCFC1FC098B6003CA967 /* ClientListViewController.swift in Sources */,
 				D8E837D81FC09064007473AF /* FirstViewController.swift in Sources */,
+				D899BD061FC0A5B9003CA967 /* Client.swift in Sources */,
 				D8E837D51FC09064007473AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,12 +481,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D899BCFD1FC099CD003CA967 /* UserList.storyboard */ = {
+		D899BCFD1FC099CD003CA967 /* ClientList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D899BCFE1FC099CD003CA967 /* Base */,
 			);
-			name = UserList.storyboard;
+			name = ClientList.storyboard;
 			sourceTree = "<group>";
 		};
 		D8E837C61FC09062007473AF /* LaunchScreen.storyboard */ = {
