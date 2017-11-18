@@ -99,13 +99,12 @@
 		D8A07DF91FC086A200E0E872 /* Training Notebook */ = {
 			isa = PBXGroup;
 			children = (
-				D8A07DFA1FC086A200E0E872 /* AppDelegate.swift */,
-				D8A07DFC1FC086A200E0E872 /* FirstViewController.swift */,
-				D8A07DFE1FC086A200E0E872 /* SecondViewController.swift */,
-				D8A07E001FC086A200E0E872 /* Main.storyboard */,
-				D8A07E031FC086A200E0E872 /* Assets.xcassets */,
-				D8A07E051FC086A200E0E872 /* LaunchScreen.storyboard */,
-				D8A07E081FC086A200E0E872 /* Info.plist */,
+				D8A07E2C1FC0875E00E0E872 /* AppDelegate */,
+				D8A07E311FC087E300E0E872 /* Business Logic */,
+				D8A07E2D1FC0876F00E0E872 /* Domain */,
+				D8A07E2B1FC0875200E0E872 /* Presentation */,
+				D8A07E2E1FC0877A00E0E872 /* Resources */,
+				D8A07E2F1FC0878600E0E872 /* Supporting Files */,
 			);
 			path = "Training Notebook";
 			sourceTree = "<group>";
@@ -126,6 +125,71 @@
 				D8A07E1E1FC086A200E0E872 /* Info.plist */,
 			);
 			path = "Training NotebookUITests";
+			sourceTree = "<group>";
+		};
+		D8A07E2A1FC0874100E0E872 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D8A07E001FC086A200E0E872 /* Main.storyboard */,
+				D8A07E051FC086A200E0E872 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D8A07E2B1FC0875200E0E872 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D8A07E301FC087CE00E0E872 /* Modules */,
+				D8A07E2A1FC0874100E0E872 /* Storyboards */,
+				D8A07DFC1FC086A200E0E872 /* FirstViewController.swift */,
+				D8A07DFE1FC086A200E0E872 /* SecondViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D8A07E2C1FC0875E00E0E872 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D8A07DFA1FC086A200E0E872 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D8A07E2D1FC0876F00E0E872 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D8A07E2E1FC0877A00E0E872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A07E031FC086A200E0E872 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8A07E2F1FC0878600E0E872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8A07E081FC086A200E0E872 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8A07E301FC087CE00E0E872 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D8A07E311FC087E300E0E872 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Business Logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Training Notebook/Info.plist";
+				INFOPLIST_FILE = "Training Notebook/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atom-wintemute.Training-Notebook";
@@ -449,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Training Notebook/Info.plist";
+				INFOPLIST_FILE = "Training Notebook/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atom-wintemute.Training-Notebook";
