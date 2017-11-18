@@ -126,12 +126,12 @@
 		D8E837BB1FC09062007473AF /* TrainingNotebook */ = {
 			isa = PBXGroup;
 			children = (
-				D8E837BC1FC09062007473AF /* Resources */,
-				D8E837BE1FC09062007473AF /* Supporting Files */,
 				D8E837C01FC09062007473AF /* AppDelegate */,
 				D8E837C21FC09062007473AF /* Business Logic */,
 				D8E837C31FC09062007473AF /* Domain */,
 				D8E837C41FC09062007473AF /* Presentation */,
+				D8E837BC1FC09062007473AF /* Resources */,
+				D8E837BE1FC09062007473AF /* Supporting Files */,
 			);
 			path = TrainingNotebook;
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 		D8E837C41FC09062007473AF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D8E837CC1FC09062007473AF /* Modules */,
 				D8E837C51FC09062007473AF /* Storyboards */,
 				D8E837CA1FC09062007473AF /* FirstViewController.swift */,
 				D8E837CB1FC09062007473AF /* SecondViewController.swift */,
-				D8E837CC1FC09062007473AF /* Modules */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
