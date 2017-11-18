@@ -13,6 +13,9 @@
 		D899BD021FC09F23003CA967 /* ClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899BD011FC09F23003CA967 /* ClientCell.xib */; };
 		D899BD041FC0A043003CA967 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BD031FC0A043003CA967 /* ClientCell.swift */; };
 		D899BD061FC0A5B9003CA967 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BD051FC0A5B9003CA967 /* Client.swift */; };
+		D899BD091FC0BF8D003CA967 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899BD081FC0BF8D003CA967 /* ClientService.swift */; };
+		D8A6D7D11FC0C0660039801A /* ClientServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6D7D01FC0C0660039801A /* ClientServiceImpl.swift */; };
+		D8A6D7D31FC0C0840039801A /* ClientServiceDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6D7D21FC0C0840039801A /* ClientServiceDouble.swift */; };
 		D8E837D31FC09064007473AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E837BD1FC09062007473AF /* Assets.xcassets */; };
 		D8E837D51FC09064007473AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E837C11FC09062007473AF /* AppDelegate.swift */; };
 		D8E837D61FC09064007473AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E837C61FC09062007473AF /* LaunchScreen.storyboard */; };
@@ -50,9 +53,12 @@
 		D899BD011FC09F23003CA967 /* ClientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientCell.xib; sourceTree = "<group>"; };
 		D899BD031FC0A043003CA967 /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		D899BD051FC0A5B9003CA967 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		D899BD081FC0BF8D003CA967 /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 		D8A07DF71FC086A200E0E872 /* Training Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Training Notebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A07E0D1FC086A200E0E872 /* Training NotebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training NotebookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A07E181FC086A200E0E872 /* Training NotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Training NotebookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A6D7D01FC0C0660039801A /* ClientServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientServiceImpl.swift; sourceTree = "<group>"; };
+		D8A6D7D21FC0C0840039801A /* ClientServiceDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientServiceDouble.swift; sourceTree = "<group>"; };
 		D8E837BD1FC09062007473AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E837BF1FC09062007473AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8E837C11FC09062007473AF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,12 +123,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D899BD071FC0A5BC003CA967 /* Model */ = {
+		D899BD071FC0A5BC003CA967 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D899BD051FC0A5B9003CA967 /* Client.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D899BD0A1FC0BF90003CA967 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8A6D7CF1FC0C0520039801A /* ClientService */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D8A07DEE1FC086A200E0E872 = {
@@ -145,6 +159,16 @@
 				D8A07E181FC086A200E0E872 /* Training NotebookUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D8A6D7CF1FC0C0520039801A /* ClientService */ = {
+			isa = PBXGroup;
+			children = (
+				D899BD081FC0BF8D003CA967 /* ClientService.swift */,
+				D8A6D7D01FC0C0660039801A /* ClientServiceImpl.swift */,
+				D8A6D7D21FC0C0840039801A /* ClientServiceDouble.swift */,
+			);
+			path = ClientService;
 			sourceTree = "<group>";
 		};
 		D8E837BB1FC09062007473AF /* TrainingNotebook */ = {
@@ -187,6 +211,7 @@
 		D8E837C21FC09062007473AF /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
+				D899BD0A1FC0BF90003CA967 /* Services */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
@@ -194,7 +219,7 @@
 		D8E837C31FC09062007473AF /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D899BD071FC0A5BC003CA967 /* Model */,
+				D899BD071FC0A5BC003CA967 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -443,9 +468,12 @@
 			files = (
 				D899BD041FC0A043003CA967 /* ClientCell.swift in Sources */,
 				D899BCFC1FC098B6003CA967 /* ClientListViewController.swift in Sources */,
+				D899BD091FC0BF8D003CA967 /* ClientService.swift in Sources */,
+				D8A6D7D11FC0C0660039801A /* ClientServiceImpl.swift in Sources */,
 				D8E837D81FC09064007473AF /* FirstViewController.swift in Sources */,
 				D899BD061FC0A5B9003CA967 /* Client.swift in Sources */,
 				D8E837D51FC09064007473AF /* AppDelegate.swift in Sources */,
+				D8A6D7D31FC0C0840039801A /* ClientServiceDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

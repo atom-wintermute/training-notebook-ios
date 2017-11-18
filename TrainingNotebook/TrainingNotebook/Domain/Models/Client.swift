@@ -9,6 +9,11 @@
 import Foundation
 
 final class Client {
-    let name: String? = nil
-    let photoImage: String? = nil
+    let name: String
+    let photoImage: String?
+    
+    init(name: String, photoImage: String?) {
+        self.name = name
+        self.photoImage = photoImage
+    }
 }
