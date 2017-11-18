@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3921B2943643C96581EA35BD /* Pods_Training_Notebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E393BA3CC6EB913926C37E /* Pods_Training_Notebook.framework */; };
 		D8E837D31FC09064007473AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E837BD1FC09062007473AF /* Assets.xcassets */; };
-		D8E837D41FC09064007473AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8E837BF1FC09062007473AF /* Info.plist */; };
 		D8E837D51FC09064007473AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E837C11FC09062007473AF /* AppDelegate.swift */; };
 		D8E837D61FC09064007473AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E837C61FC09062007473AF /* LaunchScreen.storyboard */; };
 		D8E837D71FC09064007473AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E837C81FC09062007473AF /* Main.storyboard */; };
@@ -332,7 +331,6 @@
 				D8E837D71FC09064007473AF /* Main.storyboard in Resources */,
 				D8E837D31FC09064007473AF /* Assets.xcassets in Resources */,
 				D8E837D61FC09064007473AF /* LaunchScreen.storyboard in Resources */,
-				D8E837D41FC09064007473AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -569,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
