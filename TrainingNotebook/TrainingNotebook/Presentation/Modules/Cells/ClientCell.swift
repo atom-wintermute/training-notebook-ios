@@ -14,5 +14,10 @@ final class ClientCell: UITableViewCell {
     
     func updateWithUser(client: Client) -> Void {
         userNameLabel.text = client.name
+        if let photo = client.photoImage {
+            photoImageView.image = UIImage(named: photo)
+        } else {
+            photoImageView.image = UIImage(named: "photo_placeholder")
+        }
     }
 }

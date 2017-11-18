@@ -12,22 +12,34 @@ final class ClientListViewController: UIViewController, UITableViewDataSource, U
     
     @IBOutlet var tableView: UITableView?
     
+    var clientService: ClientService?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView?.register(ClientCell.self, forCellReuseIdentifier: "ClientCell")
+        self.clientService = ClientServiceDouble()
+        
+        let nib = UINib(nibName: "ClientCell", bundle: nil)
+        self.tableView?.register(nib, forCellReuseIdentifier: "ClientCell")
         self.tableView?.reloadData()
     }
     
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ClientCell")
-        return cell!
+        let cell: ClientCell = tableView.dequeueReusableCell(withIdentifier: "ClientCell") as! ClientCell
+        if let clientService = self.clientService {
+            let clients = clientService.obtainClientList()
+            cell.updateWithUser(client: clients[indexPath.row])
+        }
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if let clientService = self.clientService {
+            return clientService.obtainClientList().count
+        }
+        return 0;
     }
     
     // MARK: - UITableViewDelegate
